@@ -21,7 +21,7 @@ The dataset used for this project is the Yelp dataset, which can be found [here]
 1. Start Elastic Search: `docker run --rm -p 9200:9200 -p 9300:9300 -e "xpack.security.enabled=false" -e "discovery.type=single-node" docker.elastic.co/elasticsearch/elasticsearch:8.7.0`
 2. Populate Elastic Search: `python3 utils/search.py`
    * Note that this would require `yelp_academic_dataset_reviews_restaurants.json` and `yelp_academic_dataset_restaurants.json` to be also present in the `processed_data` directory. We could not upload it here due to size constraints. You can download them from the below links
-     * placeholder
-     * placeholder
-* Start Django Backend: `python3 newfood_app/manage.py runserve 5001`
+     * https://drive.google.com/file/d/1wvbhwVSkQ47OwKq7YZd9yXdyEXM2iv9W/view?usp=sharing
+     * https://drive.google.com/file/d/1CAUpp54ncB7NQhniKz0DxW5ntH5ORMMl/view?usp=sharing
+* Start Django Backend: `python3 newfood_app/manage.py runserver 5001`
 * Start React Frontend: `cd frontend && npm start`
